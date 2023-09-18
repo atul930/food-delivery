@@ -14,6 +14,7 @@
    
     display: flex;
     align-items: center;
+    position: relative;
     font-family: 'Baloo Bhai';font-size: 22px;
 }
 
@@ -27,10 +28,7 @@
     margin: 3px 6px;
 }
 /* navigation bar; list styling*/
-#navbar{
-    position: relative;
-
-}
+ 
 #navbar ul{
     display: flex;
      
@@ -40,6 +38,8 @@
     content: "";
     background-color: black;
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -63,6 +63,7 @@
 #navbar ul li a :hover{
         color: black;
         background-color: white;
+        
     
         }
 
@@ -70,7 +71,7 @@
   #home{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 578px;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
@@ -81,6 +82,8 @@
     position: absolute;
     background: url( '../bg1.jpg.jpg') no-repeat center center/cover ;
     height: 100%;
+    top: 0px;
+    left: 0px;
     width: 100%;
     z-index: -1;
     opacity:0.89;
@@ -102,9 +105,37 @@
    /* font-family: 'Baloo Bhai';font-size: 22px;*/
      
   }
+
+  /* utility class*/
+#services{
+  margin: 34px;
+  display: flex;
+}
+#services .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background-color: rgb(86, 114, 137);
+}
+#services .box img{
+
+   height: 156px;
+}
+#services .box img{
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
   /* utality class*/
-  .heading{
+  .h-primary{
     font-size: 3.8rem;
+    padding: 12px;
+  }
+
+  .h-secondary{
+    font-size: 2.3rem;
     padding: 12px;
   }
   .btn{
@@ -119,3 +150,8 @@
 
 
   }
+  .center{
+    text-align: center;
+  }
+
+
